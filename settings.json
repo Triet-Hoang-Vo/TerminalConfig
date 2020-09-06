@@ -1,0 +1,237 @@
+
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+
+    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+
+    "profiles":
+    {
+        "defaults":
+        {
+            // Put settings here that you want to apply to all profiles
+            "fontFace": "Cascadia Code PL",
+            "colorScheme": "Gruvbox",
+            "cursorShape": "filledBox",
+            "cursorColor": "#EBDBB2",
+            "selectionBackground":"#272727",
+            
+            // "useAcrylic": true,
+            // "acrylicOpacity": 0.8,
+            
+            //"backgroundImage": "C:/Users/Triet Vo/Pictures/Saved Pictures/best.jpg",
+            //"backgroundImageOpacity":0.09,
+            "fontSize": 10
+        },
+        "list":
+        [
+            {
+                // Make changes here to the powershell.exe profile
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "hidden": false
+            },
+            {
+                // Make changes here to the cmd.exe profile
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "cmd",
+                "commandline": "cmd.exe",
+                "hidden": false
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "commandline" : "wsl -d Ubuntu",
+                "startingDirectory" : "//wsl$/Ubuntu/home/trietvo",
+                "source": "Windows.Terminal.Wsl"
+
+            }
+        ]
+    },
+
+    // Add custom color schemes to this array
+    "schemes": [
+        {
+          "name": "Gruvbox",
+          "background" : "#282828",
+          "black" : "#282828",
+          "blue" : "#458588",
+          "brightBlack" : "#928374",
+          "brightBlue" : "#83A598",
+          "brightCyan" : "#8EC07C",
+          "brightGreen" : "#B8BB26",
+          "brightPurple" : "#D3869B",
+          "brightRed" : "#FB4934",
+          "brightWhite" : "#EBDBB2",
+          "brightYellow" : "#FABD2F",
+          "cyan" : "#689D6A",
+          "foreground" : "#EBDBB2",
+          "green" : "#98971A",
+          "purple" : "#B16286",
+          "red" : "#CC241D",
+          "white" : "#A89984",
+          "yellow" : "#D79921"
+          },
+        {
+            "name": "Blazer",
+            "black": "#000000",
+            "red": "#b87a7a",
+            "green": "#7ab87a",
+            "yellow": "#b8b87a",
+            "blue": "#7a7ab8",
+            "purple": "#b87ab8",
+            "cyan": "#7ab8b8",
+            "white": "#d9d9d9",
+            "brightBlack": "#262626",
+            "brightRed": "#dbbdbd",
+            "brightGreen": "#bddbbd",
+            "brightYellow": "#dbdbbd",
+            "brightBlue": "#bdbddb",
+            "brightPurple": "#dbbddb",
+            "brightCyan": "#bddbdb",
+            "brightWhite": "#ffffff",
+            "background": "#0d1926",
+            "foreground": "#d9e6f2"
+          },
+        {
+            "name": "Batman",
+            "black": "#1b1d1e",
+            "red": "#e6dc44",
+            "green": "#c8be46",
+            "yellow": "#f4fd22",
+            "blue": "#737174",
+            "purple": "#747271",
+            "cyan": "#62605f",
+            "white": "#c6c5bf",
+            "brightBlack": "#505354",
+            "brightRed": "#fff78e",
+            "brightGreen": "#fff27d",
+            "brightYellow": "#feed6c",
+            "brightBlue": "#919495",
+            "brightPurple": "#9a9a9d",
+            "brightCyan": "#a3a3a6",
+            "brightWhite": "#dadbd6",
+            "background": "#1b1d1e",
+            "foreground": "#6f6f6f"
+          },
+        {
+            "name": "Whimsy",
+            "black": "#535178",
+            "red": "#ef6487",
+            "green": "#5eca89",
+            "yellow": "#fdd877",
+            "blue": "#65aef7",
+            "purple": "#aa7ff0",
+            "cyan": "#43c1be",
+            "white": "#ffffff",
+            "brightBlack": "#535178",
+            "brightRed": "#ef6487",
+            "brightGreen": "#5eca89",
+            "brightYellow": "#fdd877",
+            "brightBlue": "#65aef7",
+            "brightPurple": "#aa7ff0",
+            "brightCyan": "#43c1be",
+            "brightWhite": "#ffffff",
+            "background": "#080F19",
+            "foreground": "#b3b0d6"
+          },
+          {
+            "name": "Chester",
+            "black": "#080200",
+            "red": "#fa5e5b",
+            "green": "#16c98d",
+            "yellow": "#ffc83f",
+            "blue": "#288ad6",
+            "purple": "#d34590",
+            "cyan": "#28ddde",
+            "white": "#e7e7e7",
+            "brightBlack": "#6f6b68",
+            "brightRed": "#fa5e5b",
+            "brightGreen": "#16c98d",
+            "brightYellow": "#feef6d",
+            "brightBlue": "#278ad6",
+            "brightPurple": "#d34590",
+            "brightCyan": "#27dede",
+            "brightWhite": "#ffffff",
+            "background": "#2c3643",
+            "foreground": "#ffffff"
+          },
+          {
+            "name": "Pandora",
+            "black": "#000000",
+            "red": "#ff4242",
+            "green": "#74af68",
+            "yellow": "#ffad29",
+            "blue": "#338f86",
+            "purple": "#9414e6",
+            "cyan": "#23d7d7",
+            "white": "#e2e2e2",
+            "brightBlack": "#3f5648",
+            "brightRed": "#ff3242",
+            "brightGreen": "#74cd68",
+            "brightYellow": "#ffb929",
+            "brightBlue": "#23d7d7",
+            "brightPurple": "#ff37ff",
+            "brightCyan": "#00ede1",
+            "brightWhite": "#ffffff",
+            "background": "#141e43",
+            "foreground": "#e1e1e1"
+          },
+          {
+            "name": "Ubuntu",
+            "black": "#2e3436",
+            "red": "#cc0000",
+            "green": "#4e9a06",
+            "yellow": "#c4a000",
+            "blue": "#3465a4",
+            "purple": "#75507b",
+            "cyan": "#06989a",
+            "white": "#d3d7cf",
+            "brightBlack": "#555753",
+            "brightRed": "#ef2929",
+            "brightGreen": "#8ae234",
+            "brightYellow": "#fce94f",
+            "brightBlue": "#729fcf",
+            "brightPurple": "#ad7fa8",
+            "brightCyan": "#34e2e2",
+            "brightWhite": "#eeeeec",
+            "background": "#300a24",
+            "foreground": "#eeeeec"
+          },
+          {
+            "name": "Argonaut",
+            "black": "#232323",
+            "red": "#ff000f",
+            "green": "#8ce10b",
+            "yellow": "#ffb900",
+            "blue": "#008df8",
+            "purple": "#6d43a6",
+            "cyan": "#00d8eb",
+            "white": "#ffffff",
+            "brightBlack": "#444444",
+            "brightRed": "#ff2740",
+            "brightGreen": "#abe15b",
+            "brightYellow": "#ffd242",
+            "brightBlue": "#0092ff",
+            "brightPurple": "#9a5feb",
+            "brightCyan": "#67fff0",
+            "brightWhite": "#ffffff",
+            "background": "#0e1019",
+            "foreground": "#fffaf4"
+          }
+    ],
+
+    // Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": []
+}
